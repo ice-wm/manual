@@ -930,7 +930,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
   Show network status on task bar (Linux only).
 
-- `NetworkStatusDevice = "\[ew\]\*"`
+- `NetworkStatusDevice = "[ew]*"`
   List of network devices to be displayed in tray, space separated. Shell wildcard patterns can also be used.
 
 - `TaskBarShowCollapseButton = 0`
@@ -1488,83 +1488,83 @@ Fonts
 
 The following settings can be set to a string value.
 
-- `TitleFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `TitleFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the title bar font.
 
-- `MenuFontName = "-\*-sans-bold-r-\*-\*-\*-100-\*-\*-\*-\*-\*-\*"`
+- `MenuFontName = "-*-sans-bold-r-*-*-*-100-*-*-*-*-*-*"`
 
   Name of the menu font.
 
-- `StatusFontName = "-\*-monospace-bold-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `StatusFontName = "-*-monospace-bold-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the status display font.
 
-- `QuickSwitchFontName = "-\*-monospace-bold-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `QuickSwitchFontName = "-*-monospace-bold-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the font for Alt+Tab switcher window.
 
-- `NormalButtonFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `NormalButtonFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the normal button font.
 
-- `ActiveButtonFontName = "-\*-sans-bold-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `ActiveButtonFontName = "-*-sans-bold-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the active button font.
 
-- `NormalTaskBarFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `NormalTaskBarFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the normal task bar item font.
 
-- `ActiveTaskBarFontName = "-\*-sans-bold-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `ActiveTaskBarFontName = "-*-sans-bold-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the active task bar item font.
 
-- `ToolButtonFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `ToolButtonFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the tool button font (fallback: NormalButtonFontName).
 
-- `NormalWorkspaceFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `NormalWorkspaceFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the normal workspace button font (fallback: NormalButtonFontName).
 
-- `ActiveWorkspaceFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `ActiveWorkspaceFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the active workspace button font (fallback: ActiveButtonFontName).
 
-- `MinimizedWindowFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `MinimizedWindowFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the mini-window font.
 
-- `ListBoxFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `ListBoxFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the window list font.
 
-- `ToolTipFontName = "-\*-sans-medium-r-\*-\*-\*-120-\*-\*-\*-\*-\*-\*"`
+- `ToolTipFontName = "-*-sans-medium-r-*-*-*-120-*-*-*-*-*-*"`
 
   Name of the tool tip font.
 
-- `ClockFontName = "-\*-monospace-medium-r-\*-\*-\*-140-\*-\*-\*-\*-\*-\*"`
+- `ClockFontName = "-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*"`
 
   Name of the task bar clock font.
 
-- `TempFontName = "-\*-monospace-medium-r-\*-\*-\*-140-\*-\*-\*-\*-\*-\*"`
+- `TempFontName = "-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*"`
 
   Name of the task bar temperature font.
 
-- `ApmFontName = "-\*-monospace-medium-r-\*-\*-\*-140-\*-\*-\*-\*-\*-\*"`
+- `ApmFontName = "-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*"`
 
   Name of the task bar battery font.
 
-- `InputFontName = "-\*-monospace-medium-r-\*-\*-\*-140-\*-\*-\*-\*-\*-\*"`
+- `InputFontName = "-*-monospace-medium-r-*-*-*-140-*-*-*-*-*-*"`
 
   Name of the input field font.
 
-- `LabelFontName = "-\*-sans-medium-r-\*-\*-\*-140-\*-\*-\*-\*-\*-\*"`
+- `LabelFontName = "-*-sans-medium-r-*-*-*-140-*-*-*-*-*-*"`
 
   Name of the label font.
 
-New in 1.2.14: when IceWM is configured with `--enable-xfreetype`, only the settings with "Xft" suffix will be used. They specifiy the font name in fontconfig format:
+When IceWM is configured with `--enable-xfreetype`, only the settings with "Xft" suffix will be used. They specifiy the font name in fontconfig format:
 
     MenuFontNameXft="sans-serif:size=12:bold"
 
@@ -2014,7 +2014,7 @@ The following options are used by `icewmbg`:
 
 - `DesktopBackgroundImage = ""`
 
-  Image(s) for desktop background. If you want IceWM to ignore the desktop background image / color set both DesktopBackgroundColor ad DesktopBackgroundImage to an empty value ("").
+  Image(s) for desktop background. If you want IceWM to ignore the desktop background image / color set both DesktopBackgroundColor and DesktopBackgroundImage to an empty value ("").
 
 - `SupportSemitransparency = 1`
 
@@ -2071,7 +2071,7 @@ The `toolbar` configuration file is used to put programs as buttons on the taskb
 programs
 --------
 
-Usually automatically generated menu configuration file of installed programs. The `programs` file should be automatically generated by `wmconfig` (Redhat), `menu` (Debian) or an equivalent program (kde2ice and gno2ice to convert GNOME/KDE Menu hierarchy are available).
+Usually automatically generated menu configuration file of installed programs. The `programs` file should be automatically generated by `wmconfig` (Redhat), `menu` (Debian), or `icewm-menu-fdo`.
 
 Programs can be added using the following syntax:
 
@@ -2513,27 +2513,27 @@ Authors having contributed to this document include Gallium, Macek, Hasselmann, 
 See Also
 ========
 
-icehelp(1),
-icesh(1),
-icesound(1),
-icewm-env(5),
-icewm-focus_mode(5),
-icewm-keys(5),
-icewm-menu-fdo(1),
-icewm-menu(5),
-icewm-preferences(5),
-icewm-prefoverride(5),
-icewm-programs(5),
-icewm-session(1),
-icewm-set-gnomewm(1),
-icewm-shutdown(5),
-icewm-startup(5),
-icewm-theme(5),
-icewm-toolbar(5),
-icewm-winoptions(5),
-icewm(1),
-icewmbg(1),
-icewmhint(1),
-icewmtray(1).
+[icehelp(1)](/man/icehelp.html),
+[icesh(1)](/man/icesh.html),
+[icesound(1)](/man/icesound.html),
+[icewm-env(5)](/man/icewm-env.html),
+[icewm-focus_mode(5)](/man/icewm-focus_mode.html),
+[icewm-keys(5)](/man/icewm-keys.html),
+[icewm-menu-fdo(1)](/man/icewm-menu-fdo.html),
+[icewm-menu(5)](/man/icewm-menu.html),
+[icewm-preferences(5)](/man/icewm-preferences.html),
+[icewm-prefoverride(5)](/man/icewm-prefoverride.html),
+[icewm-programs(5)](/man/icewm-programs.html),
+[icewm-session(1)](/man/icewm-session.html),
+[icewm-set-gnomewm(1)](/man/icewm-set-gnomewm.html),
+[icewm-shutdown(5)](/man/icewm-shutdown.html),
+[icewm-startup(5)](/man/icewm-startup.html),
+[icewm-theme(5)](/man/icewm-theme.html),
+[icewm-toolbar(5)](/man/icewm-toolbar.html),
+[icewm-winoptions(5)](/man/icewm-winoptions.html),
+[icewm(1)](/man/icewm.html),
+[icewmbg(1)](/man/icewmbg.html),
+[icewmhint(1)](/man/icewmhint.html),
+[icewmtray(1)](/man/icewmtray.html).
 
 ​

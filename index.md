@@ -23,19 +23,19 @@ IceWM components
 
 The IceWM suite consists of the following core applications provided by the main package:
 
--   **icewm** - The actual window manager binary. It handles window placement and draws the window decorations.
+-   **[icewm](/man/icewm.html)** - The actual window manager binary. It handles window placement and draws the window decorations.
 
--   **icewmbg** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
+-   **[icewmbg](/man/icewmbg.html)** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
 
--   **icewm-session** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
+-   **[icewm-session](/man/icewm-session.html)** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
 
--   **icewm-menu-fdo** - This generates IceWM program menus from FreeDesktop `.desktop` files.
+-   **[icewm-menu-fdo](/man/icewm-menu-fdo.html)** - This generates IceWM program menus from FreeDesktop `.desktop` files.
 
--   **icewmhint** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
+-   **[icewmhint](/man/icewmhint.html)** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
 
--   **icehelp** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
+-   **[icehelp](/man/icehelp.html)** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
 
--   **icesh** - Could be used to manage IceWM internals from the command line.
+-   **[icesh](/man/icesh.html)** - Could be used to manage IceWM internals from the command line.
 
 Starting icewm
 --------------
@@ -320,35 +320,35 @@ Configuration Files
 
 IceWM uses the following configuration files:
 
-- **theme**
+- **[theme](/man/icewm-theme.html)**
 
   Currently selected theme
 
-- **preferences**
+- **[preferences](/man/icewm-preferences.html)**
 
   General settings - paths, colors, fonts…​
 
-- **prefoverride**
+- **[prefoverride](/man/icewm-prefoverride.html)**
 
   Settings that should override the themes.
 
-- **menu**
+- **[menu](/man/icewm-menu.html)**
 
   Menu of startable applications. Usually customized by the user.
 
-- **programs**
+- **[programs](/man/icewm-programs.html)**
 
   Automatically generated menu of startable applications (this should be used for **wmconfig**, **menu** or similar packages, perhaps as a part of the login or X startup sequence).
 
-- **winoptions**
+- **[winoptions](/man/icewm-winoptions.html)**
 
   Application window options
 
-- **keys**
+- **[keys](/man/icewm-keys.html)**
 
   Global keybindings to launch applications (not window manager related)
 
-- **toolbar**
+- **[toolbar](/man/icewm-toolbar.html)**
 
   Quick launch application icons on the taskbar.
 

@@ -2,10 +2,11 @@
 title: IceWM Manual
 ---
 
-This document is the manual for the **IceWM** X11 window manager. The IceWM manpages provide additional documentation. IceWM and its documentation are covered by a GNU LGPL license, which is included in the distribution.
-
 Introduction
 ============
+
+This document is the manual for the **IceWM** X11 window manager.
+The IceWM manpages provide additional documentation.
 
 The goal of IceWM is to provide a small, fast and familiar window manager for the X11 window system, which is compatible with the EWMH and ICCCM window manager protocols. Generally, it tries to make all functions available both by keyboard and by mouse (this is not currently possible when using mouse focus).
 
@@ -14,6 +15,12 @@ IceWM originally was designed to emulate the look of Motif, OS/2 Warp 4, OS/2 Wa
 Further information can be found at [the IceWM website](https://ice-wm.org),
 at the [current site of development](https://github.com/bbidulock/icewm/),
 which includes the [support requests](https://github.com/bbidulock/icewm/issues/).
+
+Copying
+=======
+
+IceWM and its documentation are covered by a GNU LGPL license,
+which is included in the distribution.
 
 First steps
 ===========
@@ -55,7 +62,7 @@ First make sure that you choose the correct [X startup](https://www.tldp.org/HOW
     exec icewm-session
     xterm
 
-The xterm on the last line is there simply to make sure that your X session doesn’t crash if IceWM does (should never happen). You can restart IceWM from there or start some other window manager. The session will close if you close the xterm.
+The xterm on the last line is there simply to make sure that your X session doesn't crash if IceWM does (should never happen). You can restart IceWM from there or start some other window manager. The session will close if you close the xterm.
 
 Startup and shutdown scripts
 ----------------------------
@@ -257,11 +264,11 @@ The Alt key is assumed to be the key defined as the Mod1 modifier.
 
 - `Alt+Tab`
 
-  Switch between windows (top→bottom).
+  Switch between windows (top -> bottom).
 
 - `Alt+Shift+Tab`
 
-  Switch between windows (bottom→top).
+  Switch between windows (bottom <- top).
 
 - `Ctrl+Alt+LeftArrow`
 
@@ -301,7 +308,7 @@ The Resource Path
 IceWM looks in several locations for configuration information, themes and customization; together these locations are called the resource path. The resource path contains the following directories:
 
 $ICEWM\_PRIVCFG; $XDG\_CONFIG\_HOME/icewm; $HOME/.icewm
-The first of these which is defined and existent is used to search for the user’s personal customization.
+The first of these which is defined and existent is used to search for the user's personal customization.
 
 /etc/icewm
 the system-wide defaults directory
@@ -326,7 +333,7 @@ IceWM uses the following configuration files:
 
 - **[preferences](/man/icewm-preferences.html)**
 
-  General settings - paths, colors, fonts…​
+  General settings - paths, colors, fonts...
 
 - **[prefoverride](/man/icewm-prefoverride.html)**
 
@@ -445,7 +452,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `DontRotateMenuPointer = 1`
 
-  Don’t rotate the cursor for popup menus.
+  Don't rotate the cursor for popup menus.
 
 - `LimitSize = 1`
 
@@ -473,7 +480,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `CenterMaximizedWindows = 0`
 
-  Center maximized windows which can’t fit the screen (like terminals).
+  Center maximized windows which can't fit the screen (like terminals).
 
 - `HideBordersMaximized = 0`
 
@@ -629,7 +636,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `ShapesProtectClientWindow = 1`
 
-  Don’t cut client windows by shapes set trough frame corner pixmap.
+  Don't cut client windows by shapes set trough frame corner pixmap.
 
 - `DoubleBuffer = 1`
 
@@ -877,7 +884,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `TaskBarShowTransientWindows = 1`
 
-  Show transient (dialogs, …​) windows on task bar.
+  Show transient (dialogs, ...) windows on task bar.
 
 - `TaskBarShowAllWindows = 0`
 
@@ -971,7 +978,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `TaskBarLaunchOnSingleClick = 1`
 
-  Execute taskbar applet commands (like MailCommand, ClockCommand, …​) on single click.
+  Execute taskbar applet commands (like MailCommand, ClockCommand, ...) on single click.
 
 - `EnableAddressBar = 1`
 
@@ -1027,7 +1034,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `XineramaPrimaryScreen = 0`
 
-  Primary screen for xinerama (taskbar, …​).
+  Primary screen for xinerama (taskbar, ...).
 
 Mailbox Monitoring (updated 2018-03-04)
 ---------------------------------------
@@ -1106,7 +1113,7 @@ Menus
 
 - `MenuMaximalWidth = 0`
 
-  Maximal width of popup menus, 2/3 of the screen’s width if set to zero.
+  Maximal width of popup menus, 2/3 of the screen's width if set to zero.
 
 - `NestedThemeMenuMinNumber = 25`
 
@@ -1461,7 +1468,7 @@ The following settings can be set to a numeric value.
 
 - `QuickSwitchIconBorder = 2`
 
-  Distance between the active icon and it’s border.
+  Distance between the active icon and it's border.
 
 - `QuickSwitchSeparatorSize = 6`
 
@@ -2095,14 +2102,14 @@ The class hint of an application window can be figured out by running
 
 Submenus can be added using the same keywords as the `menu` configuration file.
 
-Only double quotes are interpreted by IceWM. IceWM doesn’t run the shell automatically, so you may have to do that.
+Only double quotes are interpreted by IceWM. IceWM doesn't run the shell automatically, so you may have to do that.
 
 Hot Keys
 ========
 
 IceWM allows launching of arbitrary programs with any key combination. This is configured in the `keys` file. The syntax of this file is like:
 
-**key** "key combination" program options…​
+**key** "key combination" program options...
 
 For example:
 
@@ -2135,7 +2142,7 @@ and may also display a line like this:
 
     WM_WINDOW_ROLE = "window role"
 
-It’s possible that an application’s **name** and/or **class** contains a dot character (**.**), which is also used by IceWM to separate **name**, **class** and **role** values. In this case precede the dot with the backslash character. In the following example, we suppose an application’s window has `the.name` as its **name** value and `The.Class` as its **class** value and for this combination we set **option** to **argument**.
+It's possible that an application's **name** and/or **class** contains a dot character (**.**), which is also used by IceWM to separate **name**, **class** and **role** values. In this case precede the dot with the backslash character. In the following example, we suppose an application's window has `the.name` as its **name** value and `The.Class` as its **class** value and for this combination we set **option** to **argument**.
 
     the\.name.The\.Class.option: argument
 
@@ -2190,7 +2197,7 @@ Options that can be set per window are as follows:
 
 
   - *Ignore*
-    Don’t add an icon to the tray pane.
+    Don't add an icon to the tray pane.
 
   - *Minimized*
     Add an icon the the tray. Remove the task pane button when minimized.
@@ -2276,7 +2283,7 @@ Options that can be set per window are as follows:
 
 - **forcedClose: 0**
 
-  if set to 1 and the application had not registered WM\_DELETE\_WINDOW, a close confirmation dialog won’t be offered upon closing the window.
+  if set to 1 and the application had not registered WM\_DELETE\_WINDOW, a close confirmation dialog won't be offered upon closing the window.
 
 - **fullKeys: 0**
 
@@ -2369,7 +2376,7 @@ It would be nice to have a feature from OS/2 that varies the icon size with scre
 GDK-Pixbuf
 ----------
 
-When icewm was configured with the `--enable-gdk-pixbuf` option all of GdkPixbuf’s image formats are supported. Use them by specifying the full filename or an absolute path:
+When icewm was configured with the `--enable-gdk-pixbuf` option all of GdkPixbuf's image formats are supported. Use them by specifying the full filename or an absolute path:
 
 - **ICON.bmp**
 
@@ -2435,7 +2442,7 @@ Themes are used to configure the way the window manager looks. Things like fonts
 
 Theme files are searched in the `themes` subdirectories.
 
-These directories contain other directories that contain related theme files and their .xpm files. Each theme file specifies fonts, colors, border sizes, …​
+These directories contain other directories that contain related theme files and their .xpm files. Each theme file specifies fonts, colors, border sizes, ...
 
 The theme to use is specified in `~/.icewm/theme` file:
 
@@ -2536,4 +2543,3 @@ See Also
 [icewmhint(1)](/man/icewmhint.html),
 [icewmtray(1)](/man/icewmtray.html).
 
-​

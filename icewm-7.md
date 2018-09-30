@@ -22,6 +22,6 @@ The directories are searched in the above order, so any file located in the syst
 
 To customize icewm yourself, you could create the `$HOME/.icewm` directory and copy the files that you wish to modify, like `preferences`, `keys` or `winoptions`, from `/etc/icewm`, `/usr/share/icewm` or `/usr/local/share/icewm` and then modify as you like.
 
-To customize the default themes, create the `$HOME/.icewm/themes` directory and copy all the theme files there and then modify as necessary. Each theme has its own subdirectory. Themes can be downloaded from <https://www.box-look.org/>.
+To customize the default themes, create the `$HOME/.icewm/themes` directory and copy all the theme files there and then modify as necessary. Each theme has its own subdirectory. Themes can be downloaded from <https://themes.ice-wm.org>.
 
 [Prev](icewm-6.html) [Top](icewm-toc.html) [Next](icewm-8.html)

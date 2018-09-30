@@ -21,6 +21,6 @@ The theme to use is specified in `~/.icewm/theme` file:
 
 If the theme directory contains a file named *fonts.dir* created by mkfontdir the theme directory is inserted into the X servers font search path.
 
-[www.box-look.org](https://www.box-look.org/browse/cat/142/ord/latest/) has a very large number of themes which were created by users of IceWM.
+[www.box-look.org](https://themes.ice-wm.org) has a very large number of themes which were created by users of IceWM.
 
 [Prev](icewm-16.html) [Top](icewm-toc.html) [Next](icewm-18.html)

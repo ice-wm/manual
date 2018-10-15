@@ -8,7 +8,7 @@ Introduction
 ============
 
 This document is the manual for the **IceWM** X11 window manager.
-The IceWM manpages provide additional documentation.
+The [IceWM manpages](https://ice-wm.org/man) provide additional documentation.
 
 The goal of IceWM is to provide a small, fast and familiar window manager for the X11 window system, which is compatible with the EWMH and ICCCM window manager protocols. Generally, it tries to make all functions available both by keyboard and by mouse (this is not currently possible when using mouse focus).
 

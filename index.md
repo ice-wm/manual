@@ -662,9 +662,6 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
   WM\_CLASS to allow runonce for MailCommand.
 
-- `NewMailCommand =`
-  Command to run when new mail arrives.
-
 - `LockCommand =`
   Command to lock display/screensaver.
 
@@ -1039,9 +1036,13 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 Mailbox Monitoring (updated 2018-03-04)
 ---------------------------------------
 
+- `MailCheckDelay = 30`
+
+  Delay between new-mail checks. (seconds).
+
 - `MailBoxPath = ""`
 
-This may contain a list of mailbox specifications. Mailboxes are separated by a space. If `TaskBarShowMailboxStatus` is enabled then IceWM will monitor each mailbox for status changes each `MailCheckDelay` seconds. For each mailbox IceWM will show an icon on the taskbar. The icon shows if there is mail, if there is unread mail, or if there is new mail. Hovering the mouse pointer over an icon shows the number of messages in this mailbox and also the number unread mails. A mailbox can be the path to a file in conventional *mbox* format. If the path points to a directory then *Maildir* format is assumed. Remote mail boxes are specified by an URL using the Common Internet Scheme Syntax (RFC 1738):
+This may contain a list of mailbox specifications. Mailboxes are separated by a space. If `TaskBarShowMailboxStatus` is enabled then IceWM will monitor each mailbox for status changes each `MailCheckDelay` seconds. For each mailbox IceWM will show an icon on the taskbar. The icon shows if there is mail, if there is unread mail, or if there is new mail. Hovering the mouse pointer over an icon shows the number of messages in this mailbox and also the number of unread mails. A mailbox can be the path to a file in conventional *mbox* format. If the path points to a directory then *Maildir* format is assumed. Remote mail boxes are specified by an URL using the Common Internet Scheme Syntax (RFC 1738):
 
     scheme://user:password@server[:port][/path]
 
@@ -1063,6 +1064,15 @@ Note that for IceWM to access Gmail you must first configure your Gmail account 
 
     $ perl -e 'foreach(split("", $ARGV[0])) { printf "%%%02x", ord($_); }; print "\n";' '!p@a%s&s~'
     %21%40%23%24%25%5e%26%2a%7e
+
+- `NewMailCommand =`
+
+  The command to be run when new mail arrives. It is executed by `/bin/sh -c`.
+  The following environment variables will be set:
+
+  * `ICEWM_MAILBOX` mailbox index number of `MailBoxPath` starting from 1.
+  * `ICEWM_COUNT` gives the total number of messages in this mailbox.
+  * `ICEWM_UNREAD` gives the number of unread messages in this mailbox.
 
 Menus
 -----
@@ -1193,10 +1203,6 @@ Timings
 - `WorkspaceStatusTime = 2500`
 
   Time before workspace status window is hidden.
-
-- `MailCheckDelay = 30`
-
-  Delay between new-mail checks. (seconds).
 
 - `TaskBarCPUDelay = 500`
 

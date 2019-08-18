@@ -30,19 +30,19 @@ IceWM components
 
 The IceWM suite consists of the following core applications provided by the main package:
 
--   **[icewm](https://ice-wm.org/man/icewm.html)** - The actual window manager binary. It handles window placement and draws the window decorations.
+-   **[icewm](https://ice-wm.org/man/icewm)** - The actual window manager binary. It handles window placement and draws the window decorations.
 
--   **[icewmbg](https://ice-wm.org/man/icewmbg.html)** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
+-   **[icewmbg](https://ice-wm.org/man/icewmbg)** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
 
--   **[icewm-session](https://ice-wm.org/man/icewm-session.html)** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
+-   **[icewm-session](https://ice-wm.org/man/icewm-session)** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
 
--   **[icewm-menu-fdo](https://ice-wm.org/man/icewm-menu-fdo.html)** - This generates IceWM program menus from FreeDesktop `.desktop` files.
+-   **[icewm-menu-fdo](https://ice-wm.org/man/icewm-menu-fdo)** - This generates IceWM program menus from FreeDesktop `.desktop` files.
 
--   **[icewmhint](https://ice-wm.org/man/icewmhint.html)** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
+-   **[icewmhint](https://ice-wm.org/man/icewmhint)** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
 
--   **[icehelp](https://ice-wm.org/man/icehelp.html)** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
+-   **[icehelp](https://ice-wm.org/man/icehelp)** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
 
--   **[icesh](https://ice-wm.org/man/icesh.html)** - Could be used to manage IceWM internals from the command line.
+-   **[icesh](https://ice-wm.org/man/icesh)** - Could be used to manage IceWM internals from the command line.
 
 Starting icewm
 --------------
@@ -327,35 +327,35 @@ Configuration Files
 
 IceWM uses the following configuration files:
 
-- **[theme](https://ice-wm.org/man/icewm-theme.html)**
+- **[theme](https://ice-wm.org/man/icewm-theme)**
 
   Currently selected theme
 
-- **[preferences](https://ice-wm.org/man/icewm-preferences.html)**
+- **[preferences](https://ice-wm.org/man/icewm-preferences)**
 
   General settings - paths, colors, fonts...
 
-- **[prefoverride](https://ice-wm.org/man/icewm-prefoverride.html)**
+- **[prefoverride](https://ice-wm.org/man/icewm-prefoverride)**
 
   Settings that should override the themes.
 
-- **[menu](https://ice-wm.org/man/icewm-menu.html)**
+- **[menu](https://ice-wm.org/man/icewm-menu)**
 
   Menu of startable applications. Usually customized by the user.
 
-- **[programs](https://ice-wm.org/man/icewm-programs.html)**
+- **[programs](https://ice-wm.org/man/icewm-programs)**
 
   Automatically generated menu of startable applications (this should be used for **wmconfig**, **menu** or similar packages, perhaps as a part of the login or X startup sequence).
 
-- **[winoptions](https://ice-wm.org/man/icewm-winoptions.html)**
+- **[winoptions](https://ice-wm.org/man/icewm-winoptions)**
 
   Application window options
 
-- **[keys](https://ice-wm.org/man/icewm-keys.html)**
+- **[keys](https://ice-wm.org/man/icewm-keys)**
 
   Global keybindings to launch applications (not window manager related)
 
-- **[toolbar](https://ice-wm.org/man/icewm-toolbar.html)**
+- **[toolbar](https://ice-wm.org/man/icewm-toolbar)**
 
   Quick launch application icons on the taskbar.
 
@@ -2542,26 +2542,26 @@ Authors having contributed to this document include Gallium, Macek, Hasselmann, 
 See Also
 ========
 
-[icehelp(1)](https://ice-wm.org/man/icehelp.html),
-[icesh(1)](https://ice-wm.org/man/icesh.html),
-[icesound(1)](https://ice-wm.org/man/icesound.html),
-[icewm-env(5)](https://ice-wm.org/man/icewm-env.html),
+[icehelp(1)](https://ice-wm.org/man/icehelp),
+[icesh(1)](https://ice-wm.org/man/icesh),
+[icesound(1)](https://ice-wm.org/man/icesound),
+[icewm-env(5)](https://ice-wm.org/man/icewm-env),
 [icewm-focus_mode(5)](https://ice-wm.org/man/icewm-focus_mode.html),
-[icewm-keys(5)](https://ice-wm.org/man/icewm-keys.html),
-[icewm-menu-fdo(1)](https://ice-wm.org/man/icewm-menu-fdo.html),
-[icewm-menu(5)](https://ice-wm.org/man/icewm-menu.html),
-[icewm-preferences(5)](https://ice-wm.org/man/icewm-preferences.html),
-[icewm-prefoverride(5)](https://ice-wm.org/man/icewm-prefoverride.html),
-[icewm-programs(5)](https://ice-wm.org/man/icewm-programs.html),
-[icewm-session(1)](https://ice-wm.org/man/icewm-session.html),
-[icewm-set-gnomewm(1)](https://ice-wm.org/man/icewm-set-gnomewm.html),
-[icewm-shutdown(5)](https://ice-wm.org/man/icewm-shutdown.html),
-[icewm-startup(5)](https://ice-wm.org/man/icewm-startup.html),
-[icewm-theme(5)](https://ice-wm.org/man/icewm-theme.html),
-[icewm-toolbar(5)](https://ice-wm.org/man/icewm-toolbar.html),
-[icewm-winoptions(5)](https://ice-wm.org/man/icewm-winoptions.html),
-[icewm(1)](https://ice-wm.org/man/icewm.html),
-[icewmbg(1)](https://ice-wm.org/man/icewmbg.html),
-[icewmhint(1)](https://ice-wm.org/man/icewmhint.html),
-[icewmtray(1)](https://ice-wm.org/man/icewmtray.html).
+[icewm-keys(5)](https://ice-wm.org/man/icewm-keys),
+[icewm-menu-fdo(1)](https://ice-wm.org/man/icewm-menu-fdo),
+[icewm-menu(5)](https://ice-wm.org/man/icewm-menu),
+[icewm-preferences(5)](https://ice-wm.org/man/icewm-preferences),
+[icewm-prefoverride(5)](https://ice-wm.org/man/icewm-prefoverride),
+[icewm-programs(5)](https://ice-wm.org/man/icewm-programs),
+[icewm-session(1)](https://ice-wm.org/man/icewm-session),
+[icewm-set-gnomewm(1)](https://ice-wm.org/man/icewm-set-gnomewm),
+[icewm-shutdown(5)](https://ice-wm.org/man/icewm-shutdown),
+[icewm-startup(5)](https://ice-wm.org/man/icewm-startup),
+[icewm-theme(5)](https://ice-wm.org/man/icewm-theme),
+[icewm-toolbar(5)](https://ice-wm.org/man/icewm-toolbar),
+[icewm-winoptions(5)](https://ice-wm.org/man/icewm-winoptions),
+[icewm(1)](https://ice-wm.org/man/icewm),
+[icewmbg(1)](https://ice-wm.org/man/icewmbg),
+[icewmhint(1)](https://ice-wm.org/man/icewmhint),
+[icewmtray(1)](https://ice-wm.org/man/icewmtray).
 

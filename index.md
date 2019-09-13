@@ -420,7 +420,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `StrongPointerFocus = 0`
 
-  When focus follows mouse always give the focus to the window under mouse pointer - Even when no mouse motion has occured. Using this is not recommended. Please prefer to use just ClickToFocus=0.
+  When focus follows mouse always give the focus to the window under mouse pointer - Even when no mouse motion has occurred. Using this is not recommended. Please prefer to use just ClickToFocus=0.
 
 - `FocusOnMap = 1`
 
@@ -556,7 +556,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `Win95Keys = 0`
 
-  Makes 3 additional keys perform sensible functions. The keys must be mapped to MetaL,MetaR and Menu. The left one will activate the start menu and the right one will display the window list.
+  Makes 3 additional keys perform sensible functions. The keys must be mapped to MetaL, MetaR and Menu. The left one will activate the start menu and the right one will display the window list.
 
 - `ModSuperIsCtrlAlt = 1`
 
@@ -738,7 +738,7 @@ Terminal emulator must accept -e option.
 
 - `QuickSwitchToUrgent = 1`
 
-  Priorize Alt+Tab to urgent windows.
+  Prioritize Alt+Tab to urgent windows.
 
 - `QuickSwitchToAllWorkspaces = 1`
 
@@ -1306,7 +1306,7 @@ Window Menus
 ------------
 
 WinMenuItems
-Items to show in the window menus, posible values are:
+Items to show in the window menus, possible values are:
 
 - `  a=rAise`
 
@@ -1930,7 +1930,7 @@ Colors
 
 - `ColorApmBattary = "rgb:FF/FF/00"`
 
-  Color of APM monitor in battary mode.
+  Color of APM monitor in battery mode.
 
 - `ColorApmLine = "rgb:00/FF/00"`
 

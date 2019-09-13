@@ -572,7 +572,7 @@ Colors
 
 - `ColorApmBattary = "rgb:FF/FF/00"`
 
-  Color of APM monitor in battary mode.
+  Color of APM monitor in battery mode.
 
 - `ColorApmLine = "rgb:00/FF/00"`
 

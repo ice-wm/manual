@@ -112,6 +112,14 @@ Options that can be set per window are as follows:
 
   If set to 0, window will not have a close button.
 
+- **dDepth: 1**
+
+  If set to 0, window will not have a depth button.
+
+- **dHide: 1**
+
+  If set to 0, window will not have a hide button.
+
 - **dMaximize: 1**
 
   If set to 0, window will not have a maximize button.
@@ -123,6 +131,10 @@ Options that can be set per window are as follows:
 - **dResize: 1**
 
   If set to 0, window will not have a resize border.
+
+- **dRollup: 1**
+
+  If set to 0, window will not have a shade button.
 
 - **dSysMenu: 1**
 
@@ -211,6 +223,10 @@ Options that can be set per window are as follows:
 - **noFocusOnMap: 0**
 
   if set to 1, IceWM will not assign focus when the window is mapped for the first time.
+
+- **noIgnoreTaskBar: 0**
+
+  if set to 1, will show the window on the taskbar.
 
 - **nonICCCMconfigureRequest: 0**
 

@@ -30,19 +30,19 @@ IceWM components
 
 The IceWM suite consists of the following core applications provided by the main package:
 
--   **[icewm](https://ice-wm.org/man/icewm)** - The actual window manager binary. It handles window placement and draws the window decorations.
+- **[icewm](https://ice-wm.org/man/icewm)** - The actual window manager binary. It handles window placement and draws the window decorations.
 
--   **[icewmbg](https://ice-wm.org/man/icewmbg)** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
+- **[icewmbg](https://ice-wm.org/man/icewmbg)** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
 
--   **[icewm-session](https://ice-wm.org/man/icewm-session)** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
+- **[icewm-session](https://ice-wm.org/man/icewm-session)** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
 
--   **[icewm-menu-fdo](https://ice-wm.org/man/icewm-menu-fdo)** - This generates IceWM program menus from FreeDesktop `.desktop` files.
+- **[icewm-menu-fdo](https://ice-wm.org/man/icewm-menu-fdo)** - This generates IceWM program menus from FreeDesktop `.desktop` files.
 
--   **[icewmhint](https://ice-wm.org/man/icewmhint)** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
+- **[icewmhint](https://ice-wm.org/man/icewmhint)** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
 
--   **[icehelp](https://ice-wm.org/man/icehelp)** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
+- **[icehelp](https://ice-wm.org/man/icehelp)** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
 
--   **[icesh](https://ice-wm.org/man/icesh)** - Could be used to manage IceWM internals from the command line.
+- **[icesh](https://ice-wm.org/man/icesh)** - Could be used to manage IceWM internals from the command line.
 
 Starting icewm
 --------------
@@ -722,7 +722,8 @@ Terminal emulator must accept -e option.
 - `XRRPrimaryScreenName =`
   screen/output name of the primary screen.
 
-### Quick Switch List
+Quick Switch List
+-----------------
 
 - `QuickSwitch = 1`
 
@@ -776,7 +777,8 @@ Terminal emulator must accept -e option.
 
   Fill the rectangle highlighting the current icon.
 
-### Edge Workspace Switching
+Edge Workspace Switching
+------------------------
 
 - `EdgeSwitch = 0`
 
@@ -1046,7 +1048,6 @@ This may contain a list of mailbox specifications. Mailboxes are separated by a 
 
     scheme://user:password@server[:port][/path]
 
-
 Supported schemes are `pop3`, `pop3s`, `imap`, `imaps` and `file`. The `pop3s` and `imaps` schemes depend on the presence of the `openssl` command for `TLS/SSL` encryption. This is also the case if `port` is either `993` for imap or `995` for pop3. When the scheme is omitted then `file` is assumed. IMAP subfolders can be given by the path component. Reserved characters like *slash*, *at* and *colon* can be specified using escape sequences with a hexadecimal encoding like `%2f` for the slash or `%40` for the at sign. For example:
 
     file:///var/spool/mail/captnmark
@@ -1056,13 +1057,11 @@ Supported schemes are `pop3`, `pop3s`, `imap`, `imaps` and `file`. The `pop3s` a
     imap://mathias@localhost/INBOX.Maillisten.icewm-user
     imaps://mathias:password@imap.gmail.com/INBOX
 
-
 To help solve network protocol errors for pop3 and imap set the environment variable `ICEWM_MAILCHECK_TRACE`. IceWM will then log communication details for POP3 and IMAP mailboxes. Just set `export ICEWM_MAILCHECK_TRACE=1` before executing icewm, or set this in the `env` configuration file.
-
 
 Note that for IceWM to access Gmail you must first configure your Gmail account to enable POP3 or IMAP access. To allow non-Gmail applications like IceWM to use it see the Gmail help site for "Let less secure apps use your account". Also set secure file permissions on your IceWM preferences file and the directory which contains it. It is unwise to store a password on file ever. Consider a wallet extension for IceWM. The following Perl snippet demonstrates how to hex encode a password like `!p@a%s&s~`:
 
-    $ perl -e 'foreach(split("", $ARGV[0])) { printf "%%%02x", ord($_); }; print "\n";' '!p@a%s&s~'
+    perl -e 'foreach(split("", $ARGV[0])) { printf "%%%02x", ord($_); }; print "\n";' '!p@a%s&s~'
     %21%40%23%24%25%5e%26%2a%7e
 
 - `NewMailCommand =`
@@ -1070,9 +1069,9 @@ Note that for IceWM to access Gmail you must first configure your Gmail account 
   The command to be run when new mail arrives. It is executed by `/bin/sh -c`.
   The following environment variables will be set:
 
-  * `ICEWM_MAILBOX` mailbox index number of `MailBoxPath` starting from 1.
-  * `ICEWM_COUNT` gives the total number of messages in this mailbox.
-  * `ICEWM_UNREAD` gives the number of unread messages in this mailbox.
+  - `ICEWM_MAILBOX` mailbox index number of `MailBoxPath` starting from 1.
+  - `ICEWM_COUNT` gives the total number of messages in this mailbox.
+  - `ICEWM_UNREAD` gives the number of unread messages in this mailbox.
 
 Menus
 -----
@@ -1308,55 +1307,39 @@ Window Menus
 WinMenuItems
 Items to show in the window menus, possible values are:
 
-- `  a=rAise`
+- `a=rAise`
 
+- `c=Close`
 
-- `  c=Close`
+- `f=Fullscreen`
 
+- `h=Hide`
 
-- `  f=Fullscreen`
+- `i=trayIcon`
 
+- `k=Kill`
 
-- `  h=Hide`
+- `l=Lower`
 
+- `m=Move`
 
-- `  i=trayIcon`
+- `n=miNimize`
 
+- `r=Restore`
 
-- `  k=Kill`
+- `s=Size`
 
+- `t=moveTo`
 
-- `  l=Lower`
+- `u=rollUp`
 
+- `w=WindowsList`
 
-- `  m=Move`
+- `x=maXimize`
 
-
-- `  n=miNimize`
-
-
-- `  r=Restore`
-
-
-- `  s=Size`
-
-
-- `  t=moveTo`
-
-
-- `  u=rollUp`
-
-
-- `  w=WindowsList`
-
-
-- `  x=maXimize`
-
-
-- `  y=laYer`
+- `y=laYer`
 
   Examples:
-
 
     WinMenuItems=rmsnxfhualyticw   #Default menu
     WinMenuItems=rmsnxfhualytickw  #Menu with all possible options
@@ -2045,8 +2028,8 @@ The following options are used by `icewmbg`:
 
   Paint the background image over all multihead monitors combined.
 
-Task Bar
---------
+Task Bar Style
+--------------
 
 - `TaskBarClockLeds = 1`
 
@@ -2104,7 +2087,7 @@ The "runonce" keyword allows to launch an application only when no window has th
 
 The class hint of an application window can be figured out by running
 
-    $ xprop WM_CLASS
+    xprop WM_CLASS
 
 Submenus can be added using the same keywords as the `menu` configuration file.
 
@@ -2128,17 +2111,17 @@ Window Options (updated 2018-03-04)
 
 The **winoptions** file is used to configure settings for individual application windows. Each line in this file must have one of the following formats:
 
-- **  window\_name.window\_class.option: argument**
+- **window\_name.window\_class.option: argument**
 
-- **  window\_name.window\_role.option: argument**
+- **window\_name.window\_role.option: argument**
 
-- **  window\_class.option: argument**
+- **window\_class.option: argument**
 
-- **  window\_name.option: argument**
+- **window\_name.option: argument**
 
-- **  window\_role.option: argument**
+- **window\_role.option: argument**
 
-- **  .option: argument**
+- **.option: argument**
 
 The last format sets a default option value for all windows. Each window on the desktop should have **name** and **class** resources associated with it. Some applications also have a **window role** resource. They can be determined using the `xprop` utility. When used on a toplevel window, `xprop | grep -e CLASS -e ROLE` should output a line like this:
 
@@ -2166,7 +2149,6 @@ Options that can be set per window are as follows:
 
   The default stacking layer for the window. Layer can be one of the following seven strings:
 
-
   - *Desktop*
     Desktop window. There should be only one window in this layer.
 
@@ -2188,7 +2170,6 @@ Options that can be set per window are as follows:
   - *Menu*
     Layer for the windows above the dock.
 
-
   You can also use a number from 0 to 15.
 
 - **geometry**
@@ -2200,7 +2181,6 @@ Options that can be set per window are as follows:
 - **tray**
 
   The default tray option for the window. This affects both the tray and the task pane. Tray can be one of the following strings:
-
 
   - *Ignore*
     Don't add an icon to the tray pane.
@@ -2481,46 +2461,44 @@ Command Line Options
 
 `icewm` supports the following options:
 
-```
--d, --display=NAME
-NAME of the X server to use.
+    -d, --display=NAME
+    NAME of the X server to use.
 
---client-id=ID
-Client id to use when contacting session manager.
+    --client-id=ID
+    Client id to use when contacting session manager.
 
---sync
-Synchronize X11 commands.
+    --sync
+    Synchronize X11 commands.
 
--c, --config=FILE
-Load preferences from FILE.
+    -c, --config=FILE
+    Load preferences from FILE.
 
--t, --theme=FILE
-Load theme from FILE.
+    -t, --theme=FILE
+    Load theme from FILE.
 
---postpreferences
-Print preferences after all processing.
+    --postpreferences
+    Print preferences after all processing.
 
--V, --version
-Prints version information and exits.
+    -V, --version
+    Prints version information and exits.
 
--h, --help
-Prints this usage screen and exits.
+    -h, --help
+    Prints this usage screen and exits.
 
---replace
-Replace an existing window manager.
+    --replace
+    Replace an existing window manager.
 
--r, --restart
-Tell the running icewm to restart itself.
+    -r, --restart
+    Tell the running icewm to restart itself.
 
---configured
-Print the compile time configuration.
+    --configured
+    Print the compile time configuration.
 
---directories
-Print the configuration directories.
+    --directories
+    Print the configuration directories.
 
--l, --list-themes
-Print a list of all available themes.
-```
+    -l, --list-themes
+    Print a list of all available themes.
 
 The restart option can be used to reload the IceWM configuration after modifications. It is the preferred way to restart IceWM from the command line or in scripts. To load a different theme from the command line, combine this with the `--theme=NAME` option like:
 

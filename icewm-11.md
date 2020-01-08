@@ -687,8 +687,8 @@ The following options are used by `icewmbg`:
 
   Paint the background image over all multihead monitors combined.
 
-Task Bar
---------
+Task Bar Style
+--------------
 
 - `TaskBarClockLeds = 1`
 

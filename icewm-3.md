@@ -12,19 +12,19 @@ IceWM components
 
 The IceWM suite consists of the following core applications provided by the main package:
 
--   **[icewm](https://ice-wm.org/man/icewm)** - The actual window manager binary. It handles window placement and draws the window decorations.
+- **[icewm](https://ice-wm.org/man/icewm)** - The actual window manager binary. It handles window placement and draws the window decorations.
 
--   **[icewmbg](https://ice-wm.org/man/icewmbg)** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
+- **[icewmbg](https://ice-wm.org/man/icewmbg)** - The background setting application. It can assign plain background color or images in different formats to the X background. Either shared or separate for different workspaces. This program should be started before `icewm`.
 
--   **[icewm-session](https://ice-wm.org/man/icewm-session)** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
+- **[icewm-session](https://ice-wm.org/man/icewm-session)** - The IceWM session manager runs all of the above. This is the preferred program to start IceWM.
 
--   **[icewm-menu-fdo](https://ice-wm.org/man/icewm-menu-fdo)** - This generates IceWM program menus from FreeDesktop `.desktop` files.
+- **[icewm-menu-fdo](https://ice-wm.org/man/icewm-menu-fdo)** - This generates IceWM program menus from FreeDesktop `.desktop` files.
 
--   **[icewmhint](https://ice-wm.org/man/icewmhint)** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
+- **[icewmhint](https://ice-wm.org/man/icewmhint)** - Is a simple utility for passing IceWM hints to IceWM by window class and instance. Icewmhint uses a special property, '"\_ICEWM\_WINOPHINT"', on the root window to pass special hints to IceWM.
 
--   **[icehelp](https://ice-wm.org/man/icehelp)** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
+- **[icehelp](https://ice-wm.org/man/icehelp)** - Is used by icewm to display the 'IceWM manual' and the manpages. See the output of `icehelp --help` for details.
 
--   **[icesh](https://ice-wm.org/man/icesh)** - Could be used to manage IceWM internals from the command line.
+- **[icesh](https://ice-wm.org/man/icesh)** - Could be used to manage IceWM internals from the command line.
 
 Starting icewm
 --------------

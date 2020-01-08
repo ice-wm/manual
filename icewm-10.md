@@ -362,7 +362,8 @@ Terminal emulator must accept -e option.
 - `XRRPrimaryScreenName =`
   screen/output name of the primary screen.
 
-### Quick Switch List
+Quick Switch List
+-----------------
 
 - `QuickSwitch = 1`
 
@@ -416,7 +417,8 @@ Terminal emulator must accept -e option.
 
   Fill the rectangle highlighting the current icon.
 
-### Edge Workspace Switching
+Edge Workspace Switching
+------------------------
 
 - `EdgeSwitch = 0`
 
@@ -686,7 +688,6 @@ This may contain a list of mailbox specifications. Mailboxes are separated by a 
 
     scheme://user:password@server[:port][/path]
 
-
 Supported schemes are `pop3`, `pop3s`, `imap`, `imaps` and `file`. The `pop3s` and `imaps` schemes depend on the presence of the `openssl` command for `TLS/SSL` encryption. This is also the case if `port` is either `993` for imap or `995` for pop3. When the scheme is omitted then `file` is assumed. IMAP subfolders can be given by the path component. Reserved characters like *slash*, *at* and *colon* can be specified using escape sequences with a hexadecimal encoding like `%2f` for the slash or `%40` for the at sign. For example:
 
     file:///var/spool/mail/captnmark
@@ -696,13 +697,11 @@ Supported schemes are `pop3`, `pop3s`, `imap`, `imaps` and `file`. The `pop3s` a
     imap://mathias@localhost/INBOX.Maillisten.icewm-user
     imaps://mathias:password@imap.gmail.com/INBOX
 
-
 To help solve network protocol errors for pop3 and imap set the environment variable `ICEWM_MAILCHECK_TRACE`. IceWM will then log communication details for POP3 and IMAP mailboxes. Just set `export ICEWM_MAILCHECK_TRACE=1` before executing icewm, or set this in the `env` configuration file.
-
 
 Note that for IceWM to access Gmail you must first configure your Gmail account to enable POP3 or IMAP access. To allow non-Gmail applications like IceWM to use it see the Gmail help site for "Let less secure apps use your account". Also set secure file permissions on your IceWM preferences file and the directory which contains it. It is unwise to store a password on file ever. Consider a wallet extension for IceWM. The following Perl snippet demonstrates how to hex encode a password like `!p@a%s&s~`:
 
-    $ perl -e 'foreach(split("", $ARGV[0])) { printf "%%%02x", ord($_); }; print "\n";' '!p@a%s&s~'
+    perl -e 'foreach(split("", $ARGV[0])) { printf "%%%02x", ord($_); }; print "\n";' '!p@a%s&s~'
     %21%40%23%24%25%5e%26%2a%7e
 
 - `NewMailCommand =`
@@ -710,9 +709,9 @@ Note that for IceWM to access Gmail you must first configure your Gmail account 
   The command to be run when new mail arrives. It is executed by `/bin/sh -c`.
   The following environment variables will be set:
 
-  * `ICEWM_MAILBOX` mailbox index number of `MailBoxPath` starting from 1.
-  * `ICEWM_COUNT` gives the total number of messages in this mailbox.
-  * `ICEWM_UNREAD` gives the number of unread messages in this mailbox.
+  - `ICEWM_MAILBOX` mailbox index number of `MailBoxPath` starting from 1.
+  - `ICEWM_COUNT` gives the total number of messages in this mailbox.
+  - `ICEWM_UNREAD` gives the number of unread messages in this mailbox.
 
 Menus
 -----
@@ -948,55 +947,39 @@ Window Menus
 WinMenuItems
 Items to show in the window menus, possible values are:
 
-- `  a=rAise`
+- `a=rAise`
 
+- `c=Close`
 
-- `  c=Close`
+- `f=Fullscreen`
 
+- `h=Hide`
 
-- `  f=Fullscreen`
+- `i=trayIcon`
 
+- `k=Kill`
 
-- `  h=Hide`
+- `l=Lower`
 
+- `m=Move`
 
-- `  i=trayIcon`
+- `n=miNimize`
 
+- `r=Restore`
 
-- `  k=Kill`
+- `s=Size`
 
+- `t=moveTo`
 
-- `  l=Lower`
+- `u=rollUp`
 
+- `w=WindowsList`
 
-- `  m=Move`
+- `x=maXimize`
 
-
-- `  n=miNimize`
-
-
-- `  r=Restore`
-
-
-- `  s=Size`
-
-
-- `  t=moveTo`
-
-
-- `  u=rollUp`
-
-
-- `  w=WindowsList`
-
-
-- `  x=maXimize`
-
-
-- `  y=laYer`
+- `y=laYer`
 
   Examples:
-
 
     WinMenuItems=rmsnxfhualyticw   #Default menu
     WinMenuItems=rmsnxfhualytickw  #Menu with all possible options

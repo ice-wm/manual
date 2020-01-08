@@ -9,17 +9,17 @@ Window Options (updated 2018-03-04)
 
 The **winoptions** file is used to configure settings for individual application windows. Each line in this file must have one of the following formats:
 
-- **  window\_name.window\_class.option: argument**
+- **window\_name.window\_class.option: argument**
 
-- **  window\_name.window\_role.option: argument**
+- **window\_name.window\_role.option: argument**
 
-- **  window\_class.option: argument**
+- **window\_class.option: argument**
 
-- **  window\_name.option: argument**
+- **window\_name.option: argument**
 
-- **  window\_role.option: argument**
+- **window\_role.option: argument**
 
-- **  .option: argument**
+- **.option: argument**
 
 The last format sets a default option value for all windows. Each window on the desktop should have **name** and **class** resources associated with it. Some applications also have a **window role** resource. They can be determined using the `xprop` utility. When used on a toplevel window, `xprop | grep -e CLASS -e ROLE` should output a line like this:
 
@@ -47,7 +47,6 @@ Options that can be set per window are as follows:
 
   The default stacking layer for the window. Layer can be one of the following seven strings:
 
-
   - *Desktop*
     Desktop window. There should be only one window in this layer.
 
@@ -69,7 +68,6 @@ Options that can be set per window are as follows:
   - *Menu*
     Layer for the windows above the dock.
 
-
   You can also use a number from 0 to 15.
 
 - **geometry**
@@ -81,7 +79,6 @@ Options that can be set per window are as follows:
 - **tray**
 
   The default tray option for the window. This affects both the tray and the task pane. Tray can be one of the following strings:
-
 
   - *Ignore*
     Don't add an icon to the tray pane.

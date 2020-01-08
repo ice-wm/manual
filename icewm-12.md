@@ -56,7 +56,7 @@ The "runonce" keyword allows to launch an application only when no window has th
 
 The class hint of an application window can be figured out by running
 
-    $ xprop WM_CLASS
+    xprop WM_CLASS
 
 Submenus can be added using the same keywords as the `menu` configuration file.
 

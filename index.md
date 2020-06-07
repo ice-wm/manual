@@ -302,6 +302,14 @@ The Alt key is assumed to be the key defined as the Mod1 modifier.
 
   Activate the AddressBar. This is a command line in the taskbar where a shell command can be typed. Pressing the Enter key will execute the command. If **AddressBarCommand** was configured it will be used to execute the command otherwise `/bin/sh` is used. If the **Control** key was also pressed then the command is executed in a terminal as given by **TerminalCommand**. The address bar maintains a history which is navigable by the Up and Down keys. A rich set of editing operations is supported, including cut-/copy-/paste-operations and file completion using **Tab** or **Ctrl-I**.
 
+- `Ctrl+Alt+d`
+
+  Show the desktop.
+
+- `Ctrl+Alt+h`
+
+  Toggle taskbar visibility.
+
 The Resource Path
 =================
 

@@ -835,7 +835,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `TaskBarShowAPMStatus = 0`
 
-  Show APM/ACPI/Battery/Power status monitor on task bar.
+  Show battery status monitor on task bar.
 
 - `TaskBarShowAPMAuto = 1`
 
@@ -843,11 +843,11 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `TaskBarShowAPMTime = 1`
 
-  Show APM status on task bar in time-format.
+  Show battery status on task bar in time-format.
 
 - `TaskBarShowAPMGraph = 1`
 
-  Show APM status in graph mode.
+  Show battery status in graph mode.
 
 - `TaskBarShowMailboxStatus = 1`
 
@@ -1033,7 +1033,7 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `TaskBarApmGraphWidth = 10`
 
-  Width of APM Monitor.
+  Width of battery Monitor.
 
 - `TaskBarGraphHeight = 20`
 
@@ -1913,19 +1913,19 @@ Colors
 
 - `ColorApm = "rgb:00/00/00"`
 
-  Background of APM monitor, leave empty to force transparency.
+  Background of battery monitor, leave empty to force transparency.
 
 - `ColorApmText = "rgb:00/FF/00"`
 
-  Textcolor of APM monitor.
+  Textcolor of battery monitor.
 
 - `ColorApmBattary = "rgb:FF/FF/00"`
 
-  Color of APM monitor in battery mode.
+  Color of battery monitor when discharging.
 
 - `ColorApmLine = "rgb:00/FF/00"`
 
-  Color of APM monitor in line mode.
+  Color of battery monitor when charging.
 
 - `ColorApmGraphBg = "rgb:00/00/00"`
 
@@ -1997,7 +1997,7 @@ Colors
 
 - `ColorApmBattery = rgb:FF/FF/00`
 
-  Color of APM monitor in battery mode.
+  Color of battery monitor in battery mode.
 
 Desktop Background
 ------------------

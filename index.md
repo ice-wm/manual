@@ -6,13 +6,13 @@ Introduction
 ============
 
 This document is the manual for the **IceWM** X11 window manager.
-The [IceWM manpages](https://ice-wm.org/man) provide additional documentation.
+The [IceWM manpages](https://ice-wm.org/man/) provide additional documentation.
 
 The goal of IceWM is to provide a small, fast and familiar window manager for the X11 window system, which is compatible with the EWMH and ICCCM window manager protocols. Generally, it tries to make all functions available both by keyboard and by mouse (this is not currently possible when using mouse focus).
 
-IceWM originally was designed to emulate the look of Motif, OS/2 Warp 4, OS/2 Warp 3 and Windows 95. Since it has a theming engine others styles are possible. A large number of original themes have been created and [published by users](https://themes.ice-wm.org).
+IceWM originally was designed to emulate the look of Motif, OS/2 Warp 4, OS/2 Warp 3 and Windows 95. Since it has a theming engine others styles are possible. A large number of original themes have been created and [published by users](https://themes.ice-wm.org/).
 
-Further information can be found at [the IceWM website](https://ice-wm.org),
+Further information can be found at [the IceWM website](https://ice-wm.org/),
 at the [current site of development](https://github.com/bbidulock/icewm/),
 which includes the [support requests](https://github.com/bbidulock/icewm/issues/).
 
@@ -572,7 +572,11 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 
 - `UseMouseWheel = 0`
 
-  mouse wheel support
+  Mouse wheel support.
+
+- `TaskBarTaskGrouping = 0`
+
+  Group applications with the same class name under a single task button.
 
 - `ShowPopupsAbovePointer = 0`
 
@@ -872,10 +876,11 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 - `TaskBarShowShowDesktopButton = 1`
 
   Show 'show desktop' button on taskbar.
+  If set to 2, it will move the icon to the right side, after the clock.
 
 - `ShowEllipsis = 0`
 
-  Show Ellipsis in taskbar items.
+  Show Ellipsis in taskbar items and some other locations. This is a visual indicator like "..." to show that a string didn't fit into the visible area.
 
 - `TaskBarShowTray = 1`
 
@@ -935,6 +940,10 @@ The following settings can be set to value 1 (enabled) or value 0 (disabled).
 - `CPUStatusShowCpuFreq = 1`
 
   Show CPU frequency in CPU status tool tip.
+
+- `NetStatusShowOnlyRunning = 0`
+
+  Show network status only for connected devices, such as an active ethernet link or associated wireless interface. If false, any network interface that has been brought up will be displayed.
 
 - `TaskBarShowMEMStatus = 1`
 
@@ -2334,10 +2343,6 @@ Options that can be set per window are as follows:
 - **noIgnoreTaskBar: 0**
 
   if set to 1, will show the window on the taskbar.
-
-- **nonICCCMconfigureRequest: 0**
-
-  if set to 1, IceWM assumes the application does not support the ICCCM standard wrt positioning and compensate for that.
 
 - **startFullscreen: 0**
 
